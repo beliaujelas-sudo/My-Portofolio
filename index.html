@@ -7,250 +7,187 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Modern (Inter & Space Grotesk) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
+    <!-- Glow Cursor Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Background Ambient Gradients -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
     <!-- NAVBAR -->
-
-    <nav class="navbar">
-
-        <div class="logo">
-            Kamrillah. S
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>Kamrillah. S</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Karya</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
         </div>
-
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Karya</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-
     </nav>
 
-    <!-- HERO -->
-
-    <section id="hero">
-
-        <div class="blur blur1"></div>
-        <div class="blur blur2"></div>
-
-        <div class="hero-container">
-
-            <div class="hero-image reveal">
-
-                <img src="foto-kamrillah.jpg" alt="Kamrillah">
-
-            </div>
-
-            <div class="hero-content reveal">
-
-                <div class="badge">
-                    Math Education Student • Visual Storyteller • Music Explorer
+    <main class="main-container">
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-image-wrapper reveal">
+                    <div class="image-border-glow"></div>
+                    <img src="foto-kamrillah.jpg" alt="Kamrillah" class="hero-img">
                 </div>
 
-                <h1>Halo, Saya Kamrillah</h1>
+                <div class="hero-content">
+                    <div class="badge reveal">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>Math Education Student  ||  Visual Storyteller  ||  Mobile Photography</span>
+                    </div>
 
-                <p class="tagline">
-                    Merangkai Logika, Mengabadikan Semesta
+                    <h1 class="reveal">Halo, Saya <span class="gradient-text">Kamrillah</span></h1>
+
+                    <p class="tagline reveal">
+                        Merangkai Logika, Mengabadikan Semesta
+                    </p>
+
+                    <p class="description reveal">
+                        Mahasiswa Pendidikan Matematika Universitas Sembilanbelas November Kolaka yang memiliki
+                        ketertarikan pada fotografi, videografi, dan eksplorasi visual kreatif hanya bermodalkan smartphone.
+                    </p>
+
+                    <div class="hero-buttons reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Lihat Karya</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section-spacing">
+            <div class="glass-card reveal">
+                <span class="sub-heading">Kilas Balik</span>
+                <h2>Tentang Saya</h2>
+
+                <div class="about-text">
+                    <p>
+                        Perkenalkan, nama saya Kamrillah. S. Kalian bisa panggil saya Aril atau Beliau. Saat ini saya sedang menempuh studi di Program Studi Pendidikan Matematika, Universitas Sembilanbelas November Kolaka. Di luar rutinitas akademis, saya adalah seorang pecinta fotografi dan videografi yang mengandalkan smartphone sebagai medium utama berkarya.
+                    </p>
+                    <p>
+                        Bagi saya, keindahan visual tidak selalu menuntut peralatan yang rumit. Melalui lensa sederhana, saya belajar menangkap momen sehari-hari, menonjolkan detail yang sering terlewatkan, dan merangkai cerita visual yang jujur. Keterbatasan alat justru menjadi ruang eksplorasi untuk memaksimalkan kreativitas.
+                    </p>
+                    <p>
+                        Dalam setiap proses kreatifnya, saya berdiskusi dengan Gemini untuk membedah konsep, menyempurnakan narasi, hingga mengkurasi ide. Perpaduan antara pemikiran analitis dari latar belakang matematika, kepekaan menangkap momen, dan pendampingan teknologi menghasilkan karya yang autentik.
+                    </p>
+                </div>
+
+                <blockquote>
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    "Keindahan tidak dibatasi oleh alat, tetapi oleh cara kita melihat."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section-spacing">
+            <div class="section-header reveal">
+                <span class="sub-heading">Portofolio</span>
+                <h2>Galeri Visual</h2>
+                <p class="project-intro">
+                    Kurasi perjalanan visual dari langit malam, ketenangan alam, dinamika jalanan, hingga eksplorasi monokrom.
+                </p>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card glass-card reveal">
+                    <div class="card-img-box">
+                        <img src="placeholder-astro.jpg" alt="Astro">
+                        <span class="category-tag"><i class="fa-solid fa-moon"></i> Astro</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Menembus Batas Malam</h3>
+                        <p>Mengejar keheningan dan gugusan bintang di langit malam dengan teknik long exposure.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal">
+                    <div class="card-img-box">
+                        <img src="placeholder-nature.jpg" alt="Nature">
+                        <span class="category-tag"><i class="fa-solid fa-leaf"></i> Nature</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Detak Nadi Alam</h3>
+                        <p>Menangkap detail tekstur dan ketenangan alam sekitar yang sering terlewatkan.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal">
+                    <div class="card-img-box">
+                        <img src="placeholder-street.jpg" alt="Street">
+                        <span class="category-tag"><i class="fa-solid fa-road"></i> Street</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dinamika Jalanan</h3>
+                        <p>Cerita jujur tentang kehidupan dan interaksi di hiruk-pikuk sudut kota.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal">
+                    <div class="card-img-box">
+                        <img src="placeholder-bnw.jpg" alt="Black and White">
+                        <span class="category-tag"><i class="fa-solid fa-circle-half-stroke"></i> B&W</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Esensi Tanpa Warna</h3>
+                        <p>Permainan cahaya, bayangan, serta karakter subjek dalam format monokrom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section-spacing">
+            <div class="glass-card contact-card reveal">
+                <span class="sub-heading">Kolaborasi</span>
+                <h2>Mari Terhubung</h2>
+                <p class="contact-desc">
+                    Terbuka untuk kolaborasi, diskusi fotografi smartphone, pendidikan matematika, penelitian, proyek kreatif lainnya, atau sekedar ingin menyapa?
                 </p>
 
-                <p class="description">
-                    Mahasiswa Pendidikan Matematika Universitas
-                    Sembilanbelas November Kolaka yang memiliki
-                    ketertarikan pada fotografi, videografi, dan 
-                    eksplorasi visual kreatif dengan hanya menggunakan
-                    smartphone.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="btn-primary">
-                        Lihat Karya
+                <div class="social-links">
+                    <a href="https://www.instagram.com/a.aril_a/" target="_blank" class="instagram-card">
+                        <div class="ig-glow"></div>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="social-text">
+                            <span class="label">Follow di Instagram</span>
+                            <h3>@a.aril_a</h3>
+                        </div>
+                        <div class="social-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
                     </a>
-
-                    <a href="#contact" class="btn-secondary">
-                        Hubungi Saya
-                    </a>
-
                 </div>
-
             </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
-    <!-- ABOUT -->
-
-    <section id="about" class="glass reveal">
-
-        <h2>Tentang Saya</h2>
-
-        <p>
-            Perkenalkan, nama saya Kamrillah. Saat ini saya sedang 
-            menempuh studi di Program Studi Pendidikan Matematika, 
-            Universitas Sembilanbelas November Kolaka. Di luar rutinitas 
-            akademis, saya adalah seorang pecinta fotografi dan videografi 
-            yang mengandalkan smartphone sebagai medium utama berkarya.
-        </p>
-
-        <p>
-            Bagi saya, keindahan visual tidak selalu menuntut peralatan yang 
-            rumit. Melalui lensa sederhana, saya belajar menangkap momen 
-            sehari-hari, menonjolkan detail yang sering terlewatkan, dan merangkai 
-            cerita visual yang jujur. Keterbatasan alat justru menjadi ruang 
-            eksplorasi untuk memaksimalkan kreativitas.
-        </p>
-
-        <p>
-            Dalam setiap proses kreatifnya, saya berdiskusi dengan Gemini untuk 
-            membedah konsep, menyempurnakan narasi, hingga mengkurasi ide. Perpaduan 
-            antara pemikiran analitis dari latar belakang matematika, kepekaan 
-            menangkap momen, dan pendampingan teknologi menghasilkan karya yang autentik.
-        </p>
-
-        <p>
-            Melalui karya-karya visual yang saya hasilkan,
-            saya berusaha menangkap cerita sederhana yang sering
-            terlewatkan oleh banyak orang.
-        </p>
-
-        <blockquote>
-            "Keindahan tidak dibatasi oleh alat, tetapi oleh cara kita melihat."
-        </blockquote>
-
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-
-        <h2 class="reveal">
-            Galeri Visual
-        </h2>
-
-        <p class="project-intro reveal">
-            Kurasi perjalanan visual dari langit malam,
-            ketenangan alam, dinamika jalanan,
-            hingga eksplorasi monokrom.
-        </p>
-
-        <div class="project-grid">
-
-            <div class="project-card reveal">
-
-                <img src="placeholder-astro.jpg" alt="Astro">
-
-                <div class="card-content">
-
-                    <span>Astro</span>
-
-                    <h3>Menembus Batas Malam</h3>
-
-                    <p>
-                        Mengejar keheningan dan gugusan bintang
-                        di langit malam dengan teknik long exposure.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="project-card reveal">
-
-                <img src="placeholder-nature.jpg" alt="Nature">
-
-                <div class="card-content">
-
-                    <span>Nature</span>
-
-                    <h3>Detak Nadi Alam</h3>
-
-                    <p>
-                        Menangkap detail tekstur dan ketenangan alam sekitar yang sering terlewatkan.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="project-card reveal">
-
-                <img src="placeholder-street.jpg" alt="Street">
-
-                <div class="card-content">
-
-                    <span>Street</span>
-
-                    <h3>Dinamika Jalanan</h3>
-
-                    <p>
-                        Cerita jujur tentang kehidupan dan interaksi di hiruk-pikuk kota.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="project-card reveal">
-
-                <img src="placeholder-bnw.jpg" alt="Black and White">
-
-                <div class="card-content">
-
-                    <span>B&W</span>
-
-                    <h3>Esensi Tanpa Warna</h3>
-
-                    <p>
-                        Permainan cahaya, bayangan,
-                        serta karakter subjek dalam format monokrom.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="glass reveal">
-
-        <h2>Mari Terhubung</h2>
-
-        <p>
-            Terbuka untuk kolaborasi, diskusi fotografi smartphone,
-            pendidikan matematika, penelitian, maupun proyek kreatif lainnya.
-        </p>
-
-        <div class="social-links">
-
-            <a href="https://www.instagram.com/a.aril_a/"
-               target="_blank"
-               class="social-card">
-
-                <div class="social-icon">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-
-                <div class="social-text">
-                    <h3>Instagram</h3>
-                    <span>@a.aril_a</span>
-                </div>
-
-            </a>
-
-        </div>
-
-    </section>
+    <footer>
+        <p>© 2026 Kamrillah. S — Dirancang dengan sentuhan logika & visual.</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
